@@ -12,7 +12,7 @@ if (!fs.existsSync(outputDir)) {
 }
 
 // Function to convert an image to WebP format
-function convertToWebP(inputFilePath, outputFilePath) {
+function convertToWebP(inputFilePath, outputFilePath) { 
   sharp(inputFilePath)
     .webp()
     .toFile(outputFilePath, (err, info) => {
